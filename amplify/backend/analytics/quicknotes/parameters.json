@@ -1,0 +1,21 @@
+{
+    "appName": "quicknotes",
+    "roleName": "pinpointLambdaRole50309126",
+    "cloudformationPolicyName": "cloudformationPolicy50309126",
+    "cloudWatchPolicyName": "cloudWatchPolicy50309126",
+    "pinpointPolicyName": "pinpointPolicy50309126",
+    "authPolicyName": "pinpoint_amplify_50309126",
+    "unauthPolicyName": "pinpoint_amplify_50309126",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}
